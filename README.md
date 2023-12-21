@@ -95,12 +95,12 @@ Test(sokoban, check_player_position)
     struct sokoban_map *map;
     struct position *pos;
     map = make_map_from_string("##########\n"\
-                                "#        #\n"\
-                                "#        #\n"\
-                                "# PXO ###\n"\
-                                "#        #\n"\
-                                "# OX     #\n"\
-                                " ##########\n");
+                               "#        #\n"\
+                               "#        #\n"\
+                               "# PXO  ###\n"\
+                               "#        #\n"\
+                               "# OX     #\n"\
+                               "##########\n");
     pos = get_player_position(map);
     cr_assert_neq(pos, NULL);
     cr_assert_eq(pos->x, 2);
